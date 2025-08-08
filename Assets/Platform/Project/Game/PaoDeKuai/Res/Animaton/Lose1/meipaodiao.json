@@ -1,0 +1,174 @@
+{
+"skeleton": {
+	"hash": "m3OH/X8Z4nGNZUqvU6HVbNf7ZO4",
+	"spine": "3.8.99",
+	"x": -912.5,
+	"y": -438.72,
+	"width": 1824.48,
+	"height": 878.46,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "y": 110.14 },
+	{ "name": "SG_04", "parent": "bone", "length": 78.09, "rotation": 90.42, "x": 0.09, "y": 69.66 },
+	{ "name": "SG_05", "parent": "bone", "length": 50.37, "rotation": 89.65, "x": 3.66, "y": 66.84 },
+	{ "name": "SG_07", "parent": "SG_05", "length": 49.14, "x": 0.87, "y": 0.14 },
+	{
+		"name": "SG_11",
+		"parent": "SG_05",
+		"length": 47.77,
+		"rotation": 0.82,
+		"x": 0.62,
+		"y": -0.28,
+		"scaleX": 0.95,
+		"scaleY": 0.95
+	},
+	{ "name": "SG_6", "parent": "root" },
+	{ "name": "SG_4", "parent": "bone", "length": 78.09, "rotation": 90.42, "x": 0.09, "y": 66.05 }
+],
+"slots": [
+	{ "name": "跑得快_局内_01", "bone": "root" },
+	{ "name": "black", "bone": "root", "color": "ffffffb3", "attachment": "black" },
+	{ "name": "bg", "bone": "SG_6", "attachment": "bg" },
+	{ "name": "SG_04", "bone": "SG_04", "attachment": "t1" },
+	{ "name": "SG_4", "bone": "SG_4", "attachment": "t2" },
+	{ "name": "SG_11", "bone": "SG_11", "attachment": "11" },
+	{ "name": "SG_12", "bone": "SG_11", "attachment": "11", "blend": "additive" },
+	{ "name": "组 593", "bone": "root" },
+	{ "name": "继续游戏", "bone": "root" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"SG_04": {
+				"t1": { "x": 0.52, "y": -0.5, "rotation": -90.42, "width": 659, "height": 82 }
+			},
+			"SG_4": {
+				"t2": { "x": 0.52, "y": -0.5, "rotation": -90.42, "width": 659, "height": 246 }
+			},
+			"SG_11": {
+				"11": { "x": 8.37, "y": 0.41, "rotation": -90.47, "width": 338, "height": 133 }
+			},
+			"SG_12": {
+				"11": { "x": 8.37, "y": 0.41, "rotation": -90.47, "width": 338, "height": 133 }
+			},
+			"bg": {
+				"bg": { "scaleX": 2, "scaleY": 2, "width": 663, "height": 173 }
+			},
+			"black": {
+				"black": {
+					"x": -0.26,
+					"y": 0.51,
+					"scaleX": 28.4333,
+					"scaleY": 13.5699,
+					"rotation": -0.32,
+					"width": 64,
+					"height": 64
+				}
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"SG_04": {
+				"color": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"SG_4": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.3333, "color": "ffffff00" },
+					{ "time": 1.1, "color": "ffffffff" }
+				]
+			},
+			"SG_11": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.6667, "color": "ffffffff" }
+				]
+			},
+			"SG_12": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6667, "color": "ffffff00" },
+					{ "time": 1, "color": "ffffffb0" },
+					{ "time": 1.5, "color": "ffffff00" }
+				]
+			},
+			"bg": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff" }
+				]
+			},
+			"black": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffb3" }
+				]
+			},
+			"组 593": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6667, "color": "ffffff00" },
+					{ "time": 0.8333, "color": "ffffffff" }
+				]
+			},
+			"继续游戏": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1, "color": "ffffff00" },
+					{ "time": 1.1667, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"SG_04": {
+				"scale": [
+					{ "x": 0.7, "y": 0.7 }
+				]
+			},
+			"SG_07": {
+				"scale": [
+					{ "x": 1.5, "y": 1.5 },
+					{ "time": 0.1333, "x": 2.5, "y": 2.5 },
+					{ "time": 0.1667, "x": 2.2, "y": 2.2 },
+					{ "time": 0.2, "x": 0.8, "y": 0.8 },
+					{ "time": 0.3, "x": 1.1, "y": 1.1 },
+					{ "time": 0.4667 }
+				]
+			},
+			"SG_11": {
+				"scale": [
+					{},
+					{ "time": 0.1667, "x": 0.737, "y": 0.737 },
+					{ "time": 0.6667, "x": 1.053, "y": 1.053 }
+				]
+			},
+			"SG_6": {
+				"scale": [
+					{ "x": 0 },
+					{ "time": 0.3333 }
+				]
+			},
+			"SG_4": {
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.3333, "y": -17.62 }
+				],
+				"scale": [
+					{ "x": 0.7, "y": 0.7 },
+					{ "time": 1.1 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,40 @@
+EventLib = require ("Lua/eventlib")
+Event = require('Lua/events')
+json = require "cjson"
+
+--Lua文件引用
+require("Lua/CoreConst")
+require("Lua/DataPool")
+require("Lua/Command")
+require("Lua/LogUtil")
+require("Lua/SystemError")
+require("Lua/UtilFunctions")
+require("Lua/BaseLuaComponent")
+require("Lua/BasePanel")
+require("Lua/Global")
+require("Lua/Network")
+require("Lua/ResourcesManager")
+require("Lua/PanelManager")
+require("Lua/Scheduler")
+require("Lua/UserData")
+require("Lua/HttpApi")
+require("Lua/GlobalTcpApi")
+require("Lua/AudioManager")
+require("Lua/UI")
+require("Lua/UIConst")
+require("Lua/UIScrollView")
+require("Lua/UIHScrollView")
+require("Lua/UIPageVerticalScrollView")
+require("Lua/UIToggleMenu")
+require("Lua/LoginUtil")
+require("Lua/EventUtil")
+
+--初始化
+PanelManager.Init()
+AudioManager.Init()
+HttpApi.Init()
+GlobalTcpApi.Init()
+
+--进入Base入口文件
+Util.AddSearchBundle("base/", "base")
+require("AB/Base/Lua/Enter")

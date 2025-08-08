@@ -1,0 +1,64 @@
+{
+"skeleton": {
+	"hash": "36P8tekIU6foWB0aCuZZ/o52d+Q",
+	"spine": "3.8.99",
+	"x": -50,
+	"y": -35,
+	"width": 100,
+	"height": 98.64,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "ting_sign2", "parent": "root" },
+	{ "name": "ting_sign1", "parent": "root", "length": 37.92, "rotation": -90, "y": 35.37 }
+],
+"slots": [
+	{ "name": "ting_sign2", "bone": "ting_sign2", "attachment": "ting_sign2" },
+	{ "name": "ting_sign1", "bone": "ting_sign1", "attachment": "ting_sign1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"ting_sign1": {
+				"ting_sign1": { "x": 7.23, "y": 0.12, "rotation": 90, "width": 45, "height": 71 }
+			},
+			"ting_sign2": {
+				"ting_sign2": { "width": 100, "height": 70 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"ting_sign2": {
+				"color": [
+					{ "color": "ffffff00", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.8333, "color": "ffffffff", "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.3, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"ting_sign2": {
+				"scale": [
+					{ "x": 0.2, "y": 0.2, "curve": 0, "c2": 0.16, "c3": 0.75 },
+					{ "time": 1.3, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.3333, "x": 0.371, "y": 0.371 }
+				]
+			},
+			"ting_sign1": {
+				"translate": [
+					{ "y": 4.27, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.6667 },
+					{ "time": 1.3333, "y": 4.27 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1951628947145146}
+  m_IsPrefabParent: 1
+--- !u!1 &1951628947145146
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224881460663945160}
+  - component: {fileID: 222494469213882752}
+  - component: {fileID: 114000116441086984}
+  - component: {fileID: 114513493983387548}
+  m_Layer: 5
+  m_Name: DianShuEff
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &114000116441086984
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1951628947145146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: a65ab2c95e382dc43bea54bbb620d749, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &114513493983387548
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1951628947145146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27a67156dc427e742bc31034492cf764, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  loop: 0
+  isOnEnableReplay: 1
+  isAutoHide: 0
+  fps: 24
+  namePrefix: tixiaoguo00
+  nameSuffixLength: 2
+  sampleSprite: {fileID: 21300000, guid: a65ab2c95e382dc43bea54bbb620d749, type: 3}
+  startIndex: 1
+  endIndex: 18
+  sprites:
+  - {fileID: 21300000, guid: a65ab2c95e382dc43bea54bbb620d749, type: 3}
+  - {fileID: 21300000, guid: 471fcbdf090f43a48a4c3aa75c6ddbee, type: 3}
+  - {fileID: 21300000, guid: 47d09f800cd5b7547b682f8e267c3b61, type: 3}
+  - {fileID: 21300000, guid: 02c90a9bca8bc4f4389c0b8a9ecb44ce, type: 3}
+  - {fileID: 21300000, guid: 3d8a9f8dcead0ea40913ba0865446e32, type: 3}
+  - {fileID: 21300000, guid: a7f5114f7faca1b46a86651afd11ee32, type: 3}
+  - {fileID: 21300000, guid: 438d2f1045c203e498ec9a6ac6034b68, type: 3}
+  - {fileID: 21300000, guid: 8e3c04b7961829e4f97b64a19b48ed10, type: 3}
+  - {fileID: 21300000, guid: 86a173aad969a4e4fb031b0b0e8b6f4b, type: 3}
+  - {fileID: 21300000, guid: a41356387da44e942aa307e822a016e3, type: 3}
+  - {fileID: 21300000, guid: b7c225a6e6b79764ba1adf0a0bae6146, type: 3}
+  - {fileID: 21300000, guid: b0855631709dd304791e396cff749bd1, type: 3}
+  - {fileID: 21300000, guid: 0d643c18a949b064cbe3bb279f598eb3, type: 3}
+  - {fileID: 21300000, guid: 7732f720d364e454a8554a5cdce7c4b9, type: 3}
+  - {fileID: 21300000, guid: 7d437109c791f1242bfb331f66fddc7c, type: 3}
+  - {fileID: 21300000, guid: 55100552a02ee5643ad409acd1fe23e5, type: 3}
+  - {fileID: 21300000, guid: aa070e9dce446fb48bc77229bfa79c92, type: 3}
+  - {fileID: 21300000, guid: c25e2d23e4e471c4e98815f72b25d403, type: 3}
+--- !u!222 &222494469213882752
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1951628947145146}
+--- !u!224 &224881460663945160
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1951628947145146}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 248, y: 245}
+  m_Pivot: {x: 0.5, y: 0.5}

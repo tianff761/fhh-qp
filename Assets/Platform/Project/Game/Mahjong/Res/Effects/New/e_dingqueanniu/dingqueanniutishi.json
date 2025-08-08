@@ -1,0 +1,136 @@
+{
+"skeleton": {
+	"hash": "qOekvuROJLSpjHiXBwYt1HOvY24",
+	"spine": "3.8.99",
+	"x": -362.24,
+	"y": -70.5,
+	"width": 427.74,
+	"height": 141,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "1", "parent": "root", "y": 10.29 },
+	{ "name": "2", "parent": "root", "y": 10.29 }
+],
+"slots": [
+	{ "name": "定缺按钮", "bone": "root" },
+	{ "name": "l1", "bone": "1", "attachment": "l1", "blend": "additive" },
+	{ "name": "l2", "bone": "2", "attachment": "l1", "blend": "additive" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"l1": {
+				"l1": { "y": -10.29, "width": 131, "height": 141 }
+			},
+			"l2": {
+				"l1": { "y": -10.29, "width": 131, "height": 141 }
+			}
+		}
+	}
+],
+"animations": {
+	"tiao": {
+		"slots": {
+			"l1": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.6667, "color": "67ff3b00" },
+					{ "time": 1, "color": "67ff2dff" },
+					{ "time": 2, "color": "6fff2400" }
+				]
+			},
+			"l2": {
+				"color": [
+					{ "color": "3bff3c00" },
+					{ "time": 0.3333, "color": "79ff1cff" },
+					{ "time": 1.3333, "color": "7cff3b00" }
+				]
+			}
+		},
+		"bones": {
+			"1": {
+				"scale": [
+					{ "time": 0.6667 },
+					{ "time": 2, "x": 1.3, "y": 1.3 }
+				]
+			},
+			"2": {
+				"scale": [
+					{},
+					{ "time": 1.3333, "x": 1.3, "y": 1.3 }
+				]
+			}
+		}
+	},
+	"tong": {
+		"slots": {
+			"l1": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.6667, "color": "ffd33c00" },
+					{ "time": 1, "color": "ffb22eff" },
+					{ "time": 2, "color": "ffb42500" }
+				]
+			},
+			"l2": {
+				"color": [
+					{ "color": "ffd33c00" },
+					{ "time": 0.3333, "color": "ffab1dff" },
+					{ "time": 1.3333, "color": "ffd33c00" }
+				]
+			}
+		},
+		"bones": {
+			"1": {
+				"scale": [
+					{ "time": 0.6667 },
+					{ "time": 2, "x": 1.3, "y": 1.3 }
+				]
+			},
+			"2": {
+				"scale": [
+					{},
+					{ "time": 1.3333, "x": 1.3, "y": 1.3 }
+				]
+			}
+		}
+	},
+	"wan": {
+		"slots": {
+			"l1": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.6667, "color": "ff3a3a00" },
+					{ "time": 1, "color": "ff2c2cff" },
+					{ "time": 2, "color": "ff232300" }
+				]
+			},
+			"l2": {
+				"color": [
+					{ "color": "ff3a3a00" },
+					{ "time": 0.3333, "color": "ff1b1bff" },
+					{ "time": 1.3333, "color": "ff3a3a00" }
+				]
+			}
+		},
+		"bones": {
+			"1": {
+				"scale": [
+					{ "time": 0.6667 },
+					{ "time": 2, "x": 1.3, "y": 1.3 }
+				]
+			},
+			"2": {
+				"scale": [
+					{},
+					{ "time": 1.3333, "x": 1.3, "y": 1.3 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,248 @@
+{
+"skeleton": {
+	"hash": "6gZILq8Evp4h30krj8ULme91knQ",
+	"spine": "3.8.99",
+	"x": -1108.45,
+	"y": -58.82,
+	"width": 1560,
+	"height": 720,
+	"images": "./majiangzai/",
+	"audio": "D:\\spinerestore\\spine_files\\dong_run"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "pao", "parent": "root", "scaleX": 0.5, "scaleY": 0.5 },
+	{ "name": "pao2", "parent": "pao", "x": -41.18, "y": -56.24, "scaleX": 0.78 },
+	{ "name": "pao_images/pao_body01", "parent": "pao", "x": 6.22, "y": 18.94 },
+	{ "name": "tui_yasuo", "parent": "pao", "x": 17.6, "y": -53.27 },
+	{ "name": "pao_images/pao_tui01", "parent": "tui_yasuo", "x": -2.13, "y": -2.85 },
+	{ "name": "pao_images/pao_tui02", "parent": "pao", "x": 20.45, "y": -54.64 },
+	{ "name": "pao_images/pao_wuguan01", "parent": "pao_images/pao_body01", "length": 47.66, "rotation": 132.44, "x": 34.57, "y": 28.11 },
+	{ "name": "pao_images/pao_yuanyan01", "parent": "tui_yasuo", "x": -0.28, "y": 1.79 }
+],
+"slots": [
+	{ "name": "pao_images/LAODING2 拷贝", "bone": "root" },
+	{ "name": "bg", "bone": "root" },
+	{ "name": "pao_images/pao_body01", "bone": "pao_images/pao_body01", "attachment": "pao_images/pao_body01" },
+	{ "name": "pao_images/pao_yan01", "bone": "pao2", "attachment": "pao_images/pao_yan01" },
+	{ "name": "pao_images/pao_yan02", "bone": "pao2" },
+	{ "name": "pao_images/pao_yan03", "bone": "pao2" },
+	{ "name": "pao_images/pao_yan04", "bone": "pao2" },
+	{ "name": "pao_images/pao_yan05", "bone": "pao2" },
+	{ "name": "pao_images/pao_yan06", "bone": "pao2" },
+	{ "name": "pao_images/pao_tui01", "bone": "pao_images/pao_tui01", "attachment": "pao_images/pao_tui01" },
+	{ "name": "pao_images/pao_tui02", "bone": "pao_images/pao_tui02", "attachment": "pao_images/pao_tui02" },
+	{ "name": "pao_images/pao_tui03", "bone": "pao_images/pao_tui02" },
+	{ "name": "pao_images/pao_tui04", "bone": "pao_images/pao_tui02" },
+	{ "name": "pao_images/pao_wuguan01", "bone": "pao_images/pao_wuguan01", "attachment": "pao_images/pao_wuguan01" },
+	{ "name": "pao_images/pao_yuanyan01", "bone": "pao_images/pao_yuanyan01", "attachment": "pao_images/pao_yuanyan01" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"pao_images/pao_body01": {
+				"pao_images/pao_body01": {
+					"type": "mesh",
+					"uvs": [ 0.92718, 0.1682, 1, 0.4451, 1, 0.75844, 0.92718, 0.93333, 0.71768, 1, 0.46775, 1, 0.27295, 0.91511, 0, 0.42324, 0, 0.28115, 0.29133, 0.08804, 0.53391, 0, 0.74708, 0, 0.23987, 0.63092, 0.28398, 0.73658, 0.38743, 0.82858, 0.69066, 0.81562, 0.83966, 0.75861, 0.9416, 0.67051, 0.34299, 0.62128, 0.48938, 0.66274, 0.62531, 0.59018, 0.33515, 0.4943, 0.50768, 0.50726, 0.53904, 0.54872, 0.58087, 0.55131, 0.60701, 0.51762, 0.66713, 0.53835, 0.71157, 0.59277, 0.65667, 0.69902, 0.4946, 0.77157, 0.34561, 0.76898, 0.19922, 0.47098, 0.37697, 0.28182, 0.53904, 0.18853, 0.77431, 0.1367, 0.74294, 0.43729, 0.91808, 0.36215 ],
+					"triangles": [ 0, 34, 11, 33, 10, 11, 33, 11, 34, 9, 10, 33, 32, 9, 33, 8, 9, 32, 36, 34, 0, 31, 7, 8, 35, 33, 34, 35, 34, 36, 36, 0, 1, 32, 31, 8, 21, 31, 32, 22, 32, 33, 25, 22, 33, 21, 32, 22, 35, 25, 33, 26, 25, 35, 23, 22, 25, 24, 23, 25, 20, 25, 26, 24, 25, 20, 27, 26, 35, 20, 26, 27, 18, 21, 22, 12, 31, 21, 12, 21, 18, 19, 18, 22, 19, 22, 23, 19, 23, 24, 19, 24, 20, 1, 35, 36, 17, 35, 1, 27, 35, 17, 28, 20, 27, 19, 20, 28, 13, 12, 18, 17, 1, 2, 16, 27, 17, 16, 17, 2, 28, 27, 16, 30, 18, 19, 13, 18, 30, 29, 19, 28, 30, 19, 29, 15, 28, 16, 29, 28, 15, 14, 30, 29, 14, 29, 15, 6, 12, 13, 6, 13, 30, 6, 30, 14, 7, 31, 12, 6, 7, 12, 3, 16, 2, 5, 14, 15, 6, 14, 5, 3, 4, 15, 3, 15, 16, 5, 15, 4 ],
+					"vertices": [ 42.2, 39.08, 50.5, 7.23, 50.5, -28.8, 42.2, -48.91, 18.31, -56.58, -10.18, -56.58, -32.39, -46.82, -63.5, 9.75, -63.5, 26.09, -30.29, 48.29, -2.64, 58.42, 21.66, 58.42, -36.16, -14.14, -31.13, -26.29, -19.34, -36.87, 15.23, -35.38, 32.22, -28.82, 43.84, -18.69, -24.4, -13.03, -7.71, -17.8, 7.78, -9.45, -25.3, 1.57, -5.63, 0.08, -2.05, -4.68, 2.72, -4.98, 5.7, -1.11, 12.55, -3.49, 17.62, -9.75, 11.36, -21.97, -7.12, -30.31, -24.1, -30.01, -40.79, 4.26, -20.53, 26.01, -2.05, 36.74, 24.77, 42.7, 21.19, 8.13, 41.16, 16.77 ],
+					"hull": 12,
+					"edges": [ 0, 22, 0, 2, 2, 4, 4, 6, 6, 8, 8, 10, 10, 12, 12, 14, 14, 16, 16, 18, 18, 20, 20, 22 ],
+					"width": 114,
+					"height": 115
+				}
+			},
+			"pao_images/pao_tui01": {
+				"pao_images/pao_tui01": { "x": 0.66, "y": -0.01, "width": 66, "height": 66 }
+			},
+			"pao_images/pao_tui02": {
+				"pao_images/pao_tui02": { "x": 0.89, "y": -10.09, "width": 147, "height": 89 }
+			},
+			"pao_images/pao_tui03": {
+				"pao_images/pao_tui03": { "x": 0.88, "y": -10.09, "width": 147, "height": 89 }
+			},
+			"pao_images/pao_tui04": {
+				"pao_images/pao_tui04": { "width": 147, "height": 89 }
+			},
+			"pao_images/pao_wuguan01": {
+				"pao_images/pao_wuguan01": { "x": 24.09, "y": 6.34, "rotation": -132.44, "width": 59, "height": 60 }
+			},
+			"pao_images/pao_yan01": {
+				"pao_images/pao_yan01": { "x": 3.47, "y": 8.64, "width": 180, "height": 84 }
+			},
+			"pao_images/pao_yan02": {
+				"pao_images/pao_yan02": { "x": 3.47, "y": 8.64, "width": 180, "height": 84 }
+			},
+			"pao_images/pao_yan03": {
+				"pao_images/pao_yan03": { "x": 3.47, "y": 8.64, "width": 180, "height": 84 }
+			},
+			"pao_images/pao_yan04": {
+				"pao_images/pao_yan04": { "x": 3.47, "y": 8.64, "width": 180, "height": 84 }
+			},
+			"pao_images/pao_yan05": {
+				"pao_images/pao_yan05": { "x": 3.47, "y": 8.64, "width": 180, "height": 84 }
+			},
+			"pao_images/pao_yan06": {
+				"pao_images/pao_yan06": { "x": 3.47, "y": 8.64, "width": 180, "height": 84 }
+			},
+			"pao_images/pao_yuanyan01": {
+				"pao_images/pao_yuanyan01": { "x": 1.04, "y": -0.38, "width": 40, "height": 40 }
+			}
+		}
+	}
+],
+"animations": {
+	"pao": {
+		"slots": {
+			"pao_images/pao_tui02": {
+				"attachment": [
+					{ "time": 0.0333, "name": null },
+					{ "time": 0.1, "name": "pao_images/pao_tui02" },
+					{ "time": 0.1333, "name": null },
+					{ "time": 0.2, "name": "pao_images/pao_tui02" },
+					{ "time": 0.2333, "name": null },
+					{ "time": 0.3, "name": "pao_images/pao_tui02" },
+					{ "time": 0.3333, "name": null }
+				]
+			},
+			"pao_images/pao_tui03": {
+				"attachment": [
+					{ "time": 0.0333, "name": "pao_images/pao_tui03" },
+					{ "time": 0.0667, "name": null },
+					{ "time": 0.1333, "name": "pao_images/pao_tui03" },
+					{ "time": 0.1667, "name": null },
+					{ "time": 0.2333, "name": "pao_images/pao_tui03" },
+					{ "time": 0.2667, "name": null },
+					{ "time": 0.3333, "name": "pao_images/pao_tui03" },
+					{ "time": 0.3667, "name": null }
+				]
+			},
+			"pao_images/pao_tui04": {
+				"attachment": [
+					{ "time": 0.0667, "name": "pao_images/pao_tui04" },
+					{ "time": 0.1, "name": null },
+					{ "time": 0.1667, "name": "pao_images/pao_tui04" },
+					{ "time": 0.2, "name": null },
+					{ "time": 0.2667, "name": "pao_images/pao_tui04" },
+					{ "time": 0.3, "name": null },
+					{ "time": 0.3667, "name": "pao_images/pao_tui04" }
+				]
+			},
+			"pao_images/pao_yan01": {
+				"attachment": [
+					{ "time": 0.0333, "name": null },
+					{ "time": 0.2, "name": "pao_images/pao_yan01" },
+					{ "time": 0.2333, "name": null },
+					{ "time": 0.4, "name": "pao_images/pao_yan01" }
+				]
+			},
+			"pao_images/pao_yan02": {
+				"attachment": [
+					{ "time": 0.0333, "name": "pao_images/pao_yan02" },
+					{ "time": 0.0667, "name": null },
+					{ "time": 0.2333, "name": "pao_images/pao_yan02" },
+					{ "time": 0.2667, "name": null }
+				]
+			},
+			"pao_images/pao_yan03": {
+				"attachment": [
+					{ "time": 0.0667, "name": "pao_images/pao_yan03" },
+					{ "time": 0.1, "name": null },
+					{ "time": 0.2667, "name": "pao_images/pao_yan03" },
+					{ "time": 0.3, "name": null }
+				]
+			},
+			"pao_images/pao_yan04": {
+				"attachment": [
+					{ "time": 0.1, "name": "pao_images/pao_yan04" },
+					{ "time": 0.1333, "name": null },
+					{ "time": 0.3, "name": "pao_images/pao_yan04" },
+					{ "time": 0.3333, "name": null }
+				]
+			},
+			"pao_images/pao_yan05": {
+				"attachment": [
+					{ "time": 0.1333, "name": "pao_images/pao_yan05" },
+					{ "time": 0.1667, "name": null },
+					{ "time": 0.3333, "name": "pao_images/pao_yan05" },
+					{ "time": 0.3667, "name": null }
+				]
+			},
+			"pao_images/pao_yan06": {
+				"attachment": [
+					{ "time": 0.1667, "name": "pao_images/pao_yan06" },
+					{ "time": 0.2, "name": null },
+					{ "time": 0.3667, "name": "pao_images/pao_yan06" },
+					{ "time": 0.4, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"pao_images/pao_tui01": {
+				"rotate": [
+					{},
+					{ "time": 0.0667, "angle": 180 },
+					{ "time": 0.1333 },
+					{ "time": 0.2, "angle": 180 },
+					{ "time": 0.2667 },
+					{ "time": 0.3333, "angle": 180 },
+					{ "time": 0.4 }
+				]
+			},
+			"tui_yasuo": {
+				"scale": [
+					{ "y": 0.9 }
+				]
+			},
+			"pao_images/pao_yuanyan01": {
+				"rotate": [
+					{},
+					{ "time": 0.0667, "angle": 180 },
+					{ "time": 0.1333 },
+					{ "time": 0.2, "angle": 180 },
+					{ "time": 0.2667 },
+					{ "time": 0.3333, "angle": 180 },
+					{ "time": 0.4 }
+				]
+			},
+			"pao_images/pao_body01": {
+				"translate": [
+					{},
+					{ "time": 0.2, "y": -5.68 },
+					{ "time": 0.4 }
+				]
+			},
+			"pao_images/pao_wuguan01": {
+				"scale": [
+					{},
+					{ "time": 0.2, "x": 0.92 },
+					{ "time": 0.4 }
+				]
+			}
+		},
+		"deform": {
+			"default": {
+				"pao_images/pao_body01": {
+					"pao_images/pao_body01": [
+						{
+							"offset": 39,
+							"vertices": [ 0.298, 0, 0.298 ]
+						},
+						{
+							"time": 0.2,
+							"offset": 29,
+							"vertices": [ -1.78799, 0, -3.27799, 2.916, -3.57601, 2.916, -2.08601, -4.332, -4.94799, -1.47632, -1.19793, 2.78824, 4.19794, -0.59601, 2.08599, -0.59601, 2.08599, 0, 0, 0, 0, 0.73, 2.17799, 2.81598, 3.07199, -0.59602, 1.49001, 0.39998, 1.48602, 0.49802, -1.74699, -0.49799, -1.743, 2.08598, -0.894, 3.87396, -1.49, 1.78798, -0.596, 0, 0, 1.19202, -2.98002, 1.19202, -2.98002 ]
+						},
+						{
+							"time": 0.4,
+							"offset": 39,
+							"vertices": [ 0.298, 0, 0.298 ]
+						}
+					]
+				}
+			}
+		}
+	}
+}
+}
