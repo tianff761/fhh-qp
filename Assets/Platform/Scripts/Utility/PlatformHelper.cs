@@ -77,59 +77,59 @@ public class PlatformHelper
 
 #if !UNITY_EDITOR && UNITY_IPHONE
 
-    [DllImport("__Internal")]
-    private static extern void initPlatform();
+    // [DllImport("__Internal")]
+    // private static extern void initPlatform();
 
-    [DllImport("__Internal")]
-    private static extern void setLuaStarted();
+    // [DllImport("__Internal")]
+    // private static extern void setLuaStarted();
 
-    [DllImport("__Internal")]
-    private static extern void authLogin(int platformType);
+    // [DllImport("__Internal")]
+    // private static extern void authLogin(int platformType);
 
-    [DllImport("__Internal")]
-    private static extern void setShareImagePngBytes(byte[] bytes, int length);
+    // [DllImport("__Internal")]
+    // private static extern void setShareImagePngBytes(byte[] bytes, int length);
 
-    [DllImport("__Internal")]
-    private static extern void share(int platformType, int scene, byte[] title, byte[] content, byte[] imagePath, byte[] url, byte[] roomCode);
+    // [DllImport("__Internal")]
+    // private static extern void share(int platformType, int scene, byte[] title, byte[] content, byte[] imagePath, byte[] url, byte[] roomCode);
 
-    [DllImport("__Internal")]
-    private static extern void copyText(byte[] text);
+    // [DllImport("__Internal")]
+    // private static extern void copyText(byte[] text);
 
-    [DllImport("__Internal")]
-    private static extern void getCopyText(byte[] tag);
+    // [DllImport("__Internal")]
+    // private static extern void getCopyText(byte[] tag);
 
-    [DllImport("__Internal")]
-    private static extern void clearAppData();
+    // [DllImport("__Internal")]
+    // private static extern void clearAppData();
 
-    [DllImport("__Internal")]
-    private static extern void getRoomCode();
+    // [DllImport("__Internal")]
+    // private static extern void getRoomCode();
 
-    [DllImport("__Internal")]
-    private static extern void clearRoomCode();
+    // [DllImport("__Internal")]
+    // private static extern void clearRoomCode();
 
-    [DllImport("__Internal")]
-    private static extern void getBatteryState(int state);
+    // [DllImport("__Internal")]
+    // private static extern void getBatteryState(int state);
 
-    [DllImport("__Internal")]
-    private static extern void openDeviceSetting();
+    // [DllImport("__Internal")]
+    // private static extern void openDeviceSetting();
 
-    [DllImport("__Internal")]
-    private static extern void openOtherApp(int platformType);
+    // [DllImport("__Internal")]
+    // private static extern void openOtherApp(int platformType);
 
-    [DllImport("__Internal")]
-    private static extern void startScreenShotListen();
+    // [DllImport("__Internal")]
+    // private static extern void startScreenShotListen();
 
-    [DllImport("__Internal")]
-    private static extern void stopScreenShotListen();
+    // [DllImport("__Internal")]
+    // private static extern void stopScreenShotListen();
 
-    [DllImport("__Internal")]
-    private static extern void startRequestLocation();
+    // [DllImport("__Internal")]
+    // private static extern void startRequestLocation();
 
-    [DllImport("__Internal")]
-    private static extern void stopRequestLocation();
+    // [DllImport("__Internal")]
+    // private static extern void stopRequestLocation();
 
-    [DllImport("__Internal")]
-    private static extern void handleData(string content);
+    // [DllImport("__Internal")]
+    // private static extern void handleData(string content);
 #endif
 
 
@@ -145,7 +145,7 @@ public class PlatformHelper
         CallAndroidApi("initPlatform");
 #endif
 #if !UNITY_EDITOR && UNITY_IPHONE
-        initPlatform();
+        // initPlatform();
 #endif
 
 #if !UNITY_EDITOR && UNITY_STANDALONE_WIN
@@ -164,7 +164,7 @@ public class PlatformHelper
         CallAndroidApi("setLuaStarted");
 #endif
 #if !UNITY_EDITOR && UNITY_IPHONE
-        setLuaStarted();
+        // setLuaStarted();
 #endif
     }
 
@@ -178,8 +178,8 @@ public class PlatformHelper
         CallAndroidApi("copyText", text);
 #endif
 #if !UNITY_EDITOR && UNITY_IPHONE
-        byte[] bytes = System.Text.Encoding.UTF8.GetBytes(text);
-        copyText(bytes);
+        // byte[] bytes = System.Text.Encoding.UTF8.GetBytes(text);
+        // copyText(bytes);
 #endif
 #if UNITY_EDITOR || UNITY_STANDALONE
         PlatformManager.Instance.CopyTextCallback("0");
@@ -196,8 +196,8 @@ public class PlatformHelper
         CallAndroidApi("getCopyText", tag);
 #endif
 #if !UNITY_EDITOR && UNITY_IPHONE
-        byte[] bytes = System.Text.Encoding.UTF8.GetBytes(tag);
-        getCopyText(bytes);
+        // byte[] bytes = System.Text.Encoding.UTF8.GetBytes(tag);
+        // getCopyText(bytes);
 #endif
 
 #if !UNITY_EDITOR && UNITY_STANDALONE_WIN
@@ -218,7 +218,7 @@ public class PlatformHelper
         CallAndroidApi("clearAppData");
 #endif
 #if !UNITY_EDITOR && UNITY_IPHONE
-        clearAppData();
+        // clearAppData();
 #endif
     }
 
@@ -231,7 +231,7 @@ public class PlatformHelper
         CallAndroidApi("getRoomCode");
 #endif
 #if !UNITY_EDITOR && UNITY_IPHONE
-        getRoomCode();
+        // getRoomCode();
 #endif
     }
 
@@ -244,7 +244,7 @@ public class PlatformHelper
         CallAndroidApi("clearRoomCode");
 #endif
 #if !UNITY_EDITOR && UNITY_IPHONE
-        clearRoomCode();
+        // clearRoomCode();
 #endif
     }
 
@@ -257,7 +257,7 @@ public class PlatformHelper
         CallAndroidApi("getBatteryState");
 #endif
 #if !UNITY_EDITOR && UNITY_IPHONE
-        getBatteryState(state);
+        // getBatteryState(state);
 #endif
     }
 
@@ -301,33 +301,33 @@ public class PlatformHelper
 #endif
 
 #if !UNITY_EDITOR && UNITY_IPHONE
-        byte[] titleBytes = System.Text.Encoding.UTF8.GetBytes(title);
-        byte[] contentBytes = System.Text.Encoding.UTF8.GetBytes(content);
-        byte[] imagePathBytes = System.Text.Encoding.UTF8.GetBytes(imagePath);
-        byte[] urlBytes = System.Text.Encoding.UTF8.GetBytes(url);
-        byte[] roomCodeBytes = System.Text.Encoding.UTF8.GetBytes(roomCode);
+        // byte[] titleBytes = System.Text.Encoding.UTF8.GetBytes(title);
+        // byte[] contentBytes = System.Text.Encoding.UTF8.GetBytes(content);
+        // byte[] imagePathBytes = System.Text.Encoding.UTF8.GetBytes(imagePath);
+        // byte[] urlBytes = System.Text.Encoding.UTF8.GetBytes(url);
+        // byte[] roomCodeBytes = System.Text.Encoding.UTF8.GetBytes(roomCode);
 
-        byte[] bTitle = new byte[titleBytes.Length + 1];
-        titleBytes.CopyTo(bTitle, 0);
-        bTitle[titleBytes.Length] = 0;
+        // byte[] bTitle = new byte[titleBytes.Length + 1];
+        // titleBytes.CopyTo(bTitle, 0);
+        // bTitle[titleBytes.Length] = 0;
 
-        byte[] bContent = new byte[contentBytes.Length + 1];
-        contentBytes.CopyTo(bContent, 0);
-        bContent[contentBytes.Length] = 0;
+        // byte[] bContent = new byte[contentBytes.Length + 1];
+        // contentBytes.CopyTo(bContent, 0);
+        // bContent[contentBytes.Length] = 0;
 
-        byte[] bImagePath = new byte[imagePathBytes.Length + 1];
-        imagePathBytes.CopyTo(bImagePath, 0);
-        bImagePath[imagePathBytes.Length] = 0;
+        // byte[] bImagePath = new byte[imagePathBytes.Length + 1];
+        // imagePathBytes.CopyTo(bImagePath, 0);
+        // bImagePath[imagePathBytes.Length] = 0;
 
-        byte[] bUrl = new byte[urlBytes.Length + 1];
-        urlBytes.CopyTo(bUrl, 0);
-        bUrl[urlBytes.Length] = 0;
+        // byte[] bUrl = new byte[urlBytes.Length + 1];
+        // urlBytes.CopyTo(bUrl, 0);
+        // bUrl[urlBytes.Length] = 0;
 
-        byte[] bRoomCode = new byte[roomCodeBytes.Length + 1];
-        roomCodeBytes.CopyTo(bRoomCode, 0);
-        bRoomCode[roomCodeBytes.Length] = 0;
+        // byte[] bRoomCode = new byte[roomCodeBytes.Length + 1];
+        // roomCodeBytes.CopyTo(bRoomCode, 0);
+        // bRoomCode[roomCodeBytes.Length] = 0;
 
-        share(platformType, scene, bTitle, bContent, bImagePath, bUrl, bRoomCode);
+        // share(platformType, scene, bTitle, bContent, bImagePath, bUrl, bRoomCode);
 #endif
     }
 
@@ -340,7 +340,7 @@ public class PlatformHelper
         CallAndroidApi("setShareImagePngBytes", bytes);
 #endif
 #if !UNITY_EDITOR && UNITY_IPHONE
-        setShareImagePngBytes(bytes, bytes.Length);
+        // setShareImagePngBytes(bytes, bytes.Length);
 #endif
     }
 
@@ -599,7 +599,7 @@ public class PlatformHelper
         CallAndroidApi("openOtherApp", platformType);
 #endif
 #if !UNITY_EDITOR && UNITY_IPHONE
-        openOtherApp(platformType);
+        // openOtherApp(platformType);
 #endif
     }
 
@@ -676,7 +676,7 @@ public class PlatformHelper
         CallAndroidApi("openDeviceSetting");
 #endif
 #if !UNITY_EDITOR && UNITY_IPHONE
-        openDeviceSetting();
+        // openDeviceSetting();
 #endif
     }
 
@@ -689,7 +689,7 @@ public class PlatformHelper
         CallAndroidApi("startScreenShotListen");
 #endif
 #if !UNITY_EDITOR && UNITY_IPHONE
-        startScreenShotListen();
+        // startScreenShotListen();
 #endif
     }
 
@@ -702,7 +702,7 @@ public class PlatformHelper
         CallAndroidApi("stopScreenShotListen");
 #endif
 #if !UNITY_EDITOR && UNITY_IPHONE
-        stopScreenShotListen();
+        // stopScreenShotListen();
 #endif
     }
 
@@ -771,7 +771,7 @@ public class PlatformHelper
         CallAndroidApi("authLogin", platformType);
 #endif
 #if !UNITY_EDITOR && UNITY_IPHONE
-        authLogin(platformType);
+        // authLogin(platformType);
 #endif
     }
 
@@ -797,7 +797,7 @@ public class PlatformHelper
         CallAndroidApi("handleData", content);
 #endif
 #if !UNITY_EDITOR && UNITY_IPHONE
-        handleData(content);
+        // handleData(content);
 #endif
     }
 
