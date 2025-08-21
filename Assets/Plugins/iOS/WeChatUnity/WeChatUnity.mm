@@ -6,26 +6,14 @@
 
 #define UNITY_CS_API extern "C"
 
-static NSString *mWXAppid = nil;
-
-// // 初始化
-// UNITY_CS_API void initWeChat(const char* appId, const char* universalLink)
-// {
-//     NSString *appIdStr = str_c2ns(appId);
-//     NSString *ul = str_c2ns(universalLink);
-//     NSLog(@"[WeChatUnity] initWeChat appId=%@, universalLink=%@", appIdStr, ul);
-//     mWXAppid = appIdStr;
-//     [WXApi registerApp:mWXAppid universalLink:ul];
-// }
-
-
 // 登录
 UNITY_CS_API void authLogin(int platformType)
 {
+    gPlatformType = platformType;
     if (![WXApi isWXAppInstalled]){
         //未安装微信
         NSLog(@"[WeChatUnity] authLogin isWXAppInstalled: false");
-        [[WXApiManager sharedManager] OnLoginCompleteCall:NO msg:@"wechat_not_installed"];
+        [[WXApiManager sharedManager] OnLoginCompleteCall:WXErrCodeNotInstalled msg:@"wechat_not_installed" code:@""];
         return;
     }
 
@@ -37,7 +25,7 @@ UNITY_CS_API void authLogin(int platformType)
             NSLog(@"wechat authLogin sendReq success");
         } else {
             NSLog(@"wechat authLogin sendReq failure");
-            [[WXApiManager sharedManager] OnLoginCompleteCall:NO msg:@"wechat_sendReq_fail"];
+            [[WXApiManager sharedManager] OnLoginCompleteCall:WXErrCodeSendReqFail msg:@"wechat_sendReq_fail"  code:@""];
         }
     }];
 

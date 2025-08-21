@@ -2,6 +2,7 @@
 
 #import  "UnityAppController.h"
 #import "WXApiManager.h"
+#import "Utils.h"
 
 @interface CustomAppController : UnityAppController
 @end
@@ -13,7 +14,7 @@ IMPL_APP_CONTROLLER_SUBCLASS (CustomAppController)
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
     [super application:application didFinishLaunchingWithOptions:launchOptions];
-    [WXApi registerApp:@"wx8ed80c323f9d13cc" universalLink:@"https://web.xiaougame.org/wx_redirect/"];
+    [WXApi registerApp: WeChatAppId universalLink: WeChatUL];
     
     return YES;
 }

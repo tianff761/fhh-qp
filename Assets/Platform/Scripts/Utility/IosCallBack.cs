@@ -10,5 +10,6 @@ public class IosCallBack : MonoBehaviour
     {
 
         Debug.LogWarning(">> WechatLoginCallback > " + callBackInfo);
+        AuthLoginHelper.AuthLogin(callBackInfo);
     }
 }

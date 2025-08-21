@@ -7,6 +7,6 @@
 
 + (instancetype)sharedManager;
 
-- (void)OnLoginCompleteCall:(BOOL)isSuccess msg:(NSString*)msg;
+- (void)OnLoginCompleteCall:(int)errCode msg:(NSString*)message code:(NSString*)code;
 
 @end

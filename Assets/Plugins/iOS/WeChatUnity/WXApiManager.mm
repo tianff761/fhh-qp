@@ -26,26 +26,32 @@
 }
 
 - (void)managerDidRecvAuthResponse:(SendAuthResp *)response {
-    int errorCode = response.errCode;
+    NSString * message = @"";
+     int errorCode = response.errCode;
      switch (errorCode) {
-        case WXSuccess:
-            [self OnLoginCompleteCall:YES msg:response.code ?: @""];
-            break;
         case WXErrCodeUserCancel:
-            [self OnLoginCompleteCall:NO msg:@"UserCancel"];
+            message = @"UserCancel";
             break;
         case WXErrCodeAuthDeny:
-            [self OnLoginCompleteCall:NO msg:@"AuthDeny"];
+            message = @"AuthDeny";
             break;
         default:
-            [self OnLoginCompleteCall:NO msg:[NSString stringWithFormat:@"error: %d", errorCode]];
             break;
     }
+    [self OnLoginCompleteCall:response.errCode msg:message code:response.code ?: @""];
 }
 
--(void)OnLoginCompleteCall:(BOOL)isSuccess msg:(NSString*)msg
+-(void)OnLoginCompleteCall:(int)errCode msg:(NSString*)message code:(NSString*)code
 {
-    sendCallbackMsg(@"WechatLoginCallback", isSuccess, msg);
+    NSDictionary* receiveMap = @{
+        @"code": @(errCode),
+        @"msg": message,
+        @"platformType": @(gPlatformType),
+        @"appId": WeChatAppId,
+        @"appSecret": WeChatAppSecret,
+        @"appCode": code ?: @""
+    };
+    sendCallbackMsg(@"WechatLoginCallback", receiveMap);
 }
 
 

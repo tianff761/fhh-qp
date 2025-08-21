@@ -2,6 +2,15 @@
 
 extern "C" void UnitySendMessage(const char* obj, const char* method, const char* msg);
 
+NSString * const WeChatAppId = @"wx8ed80c323f9d13cc";
+NSString * const WeChatAppSecret = @"80e091cdf7e7ab4e7e4994b4afe9346d";
+NSString * const WeChatUL = @"https://web.xiaougame.org/wx_redirect/";
+
+int const WXErrCodeNotInstalled = 3;
+int const WXErrCodeSendReqFail = 99;
+
+int gPlatformType = 0;
+
 NSString * str_c2ns(const char *s)
 {
     if (s)
@@ -32,10 +41,10 @@ NSString * dictToJson(NSDictionary *dict)
     return jsonString;
 }
 
-void sendCallbackMsg(NSString *method, BOOL isSuccess, NSString *code)
+void sendCallbackMsg(NSString *method, NSDictionary* receiveMap)
 {
-    NSString *successStr = isSuccess ? @"true" : @"false";
-    NSDictionary* receiveMap = @{@"isSuccess": successStr, @"code": code ?: @""};
+    // NSString *successStr = isSuccess ? @"true" : @"false";
+    // NSDictionary* receiveMap = @{@"isSuccess": successStr, @"code": code ?: @""};
     NSString* jsonStr = dictToJson(receiveMap);
     UnitySendMessage("IosCallBack", [method UTF8String], [jsonStr UTF8String]);
 }
