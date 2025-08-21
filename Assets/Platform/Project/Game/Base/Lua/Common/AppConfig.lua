@@ -10,7 +10,7 @@ AppConfig.VoiceUpType = Global.VoidUploadType.QiNiu
 AppConfig.IsShenHeVersion = false
 
 --登录类型
-AppConfig.LoginType = LoginType.Test
+AppConfig.LoginType = LoginType.Release
 
 --是否开启自动登录
 AppConfig.IsAutoLogin = true
@@ -27,8 +27,8 @@ AppConfig.MultiTouchEnabled = false
 --是否开启Reporter
 AppConfig.IsReporterEnabled = false
 
-AppConfig.WeChatAppId = "wxe309b5962d55d781"
-AppConfig.WeChatAppSecret = "1ccf96314b1c07b9795fd442f753da75"
+AppConfig.WeChatAppId = "wx8ed80c323f9d13cc"
+AppConfig.WeChatAppSecret = "80e091cdf7e7ab4e7e4994b4afe9346d"
 
 ---原机ID SourceID 卡号
 AppConfig.ChaoJiDunYuanJiMa = {
@@ -58,16 +58,16 @@ AppConfig.ResourceFolderName = "Config"
 --================================================================
 --正式服务器列表
 AppConfig.ServerList = {
-    { name = "正式服", address = "6xuqep4g.cnmnmsl.top", port = 6092, playbackPort = 8092, PlaybackDataUrl = "http://5gzb8p43.cnmnmsl.top:8092/playback/record/" },
+    { name = "正式服", address = "3.0.147.160", port = 6090, playbackPort = 8090, PlaybackDataUrl = "http://3.0.147.160:8090/record/" },
 }
 
 --测试服务器列表
 AppConfig.TestServerList = {
     -- { name = "内网测试服", address = "6xuqep4g.cnmnmsl.top", port = 6092, playbackPort = 8092, PlaybackDataUrl = "http://5gzb8p43.cnmnmsl.top:8092/playback/record/" },
-    { name = "正式服", address = "218.244.136.238", port = 6090, playbackPort = 8090, PlaybackDataUrl = "http://3.0.147.160:8090/record/" },
+    { name = "正式服", address = "3.0.147.160", port = 6090, playbackPort = 8090, PlaybackDataUrl = "http://3.0.147.160:8090/record/" },
 }
 --账号Http API地址
-AppConfig.AccountUrl = { name = "正式", address = "218.244.136.238", port = 6200 }
+AppConfig.AccountUrl = { name = "正式", address = "3.0.147.160", port = 6200 }
 --AppConfig.AccountUrl = { name = "正式", address = "192.168.10.206", port = 6200 }
 --账号测试Http API地址
 --内网测试服
