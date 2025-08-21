@@ -83,8 +83,8 @@ public class PlatformHelper
     // [DllImport("__Internal")]
     // private static extern void setLuaStarted();
 
-    // [DllImport("__Internal")]
-    // private static extern void authLogin(int platformType);
+    [DllImport("__Internal")]
+    private static extern void authLogin(int platformType);
 
     // [DllImport("__Internal")]
     // private static extern void setShareImagePngBytes(byte[] bytes, int length);
@@ -771,7 +771,7 @@ public class PlatformHelper
         CallAndroidApi("authLogin", platformType);
 #endif
 #if !UNITY_EDITOR && UNITY_IPHONE
-        // authLogin(platformType);
+        authLogin(platformType);
 #endif
     }
 
